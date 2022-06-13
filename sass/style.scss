@@ -1,0 +1,69 @@
+/*!
+Theme Name: 31W-exercice-1
+Theme URI: http://underscores.me/
+Author: Sana Bakhrouf e2195749
+Author URI: https://github.com/tissou2212
+Description: Thème de base pour le cours de 31W
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: 31-w
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Variable
+	- couleur
+	- police
+	- dimension
+
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+
+# Composant
+	- Navigation
+	- Posts and pages
+	- Widgets
+	- Media
+	- Galleries
+# plugins
+
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/* variable
+--------------------------------------------- */
+@import "variable/colors";
+@import "variable/dimension";
+@import "variable/typography";
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+@import "generic/normalize";
+
+/* Box sizing
+--------------------------------------------- */
+@import "generic/box-sizing";
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import "base/base";
+
