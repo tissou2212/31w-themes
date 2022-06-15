@@ -1,9 +1,8 @@
-/*!
-Theme Name: 31W-exercice-1
-Theme URI: http://underscores.me/
-Author: Sana Bakhrouf e2195749
-Author URI: https://github.com/tissou2212
-Description: Thème de base pour le cours de 31W
+/*! 
+Theme Name: 31W-cours 
+Author: Sana Bakhrouf
+Author URI: http://github.com/tissou2212
+Description: Thème de base pour l'exercice 1 du cours 31w'
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.4
@@ -15,7 +14,7 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Variable
+# variable
 	- couleur
 	- police
 	- dimension
@@ -28,16 +27,15 @@ Text Domain: 31-w
 	- Elements
 	- Links
 	- Forms
-## Layouts
-
-# Composant
+## Layout
+# Composent
 	- Navigation
 	- Posts and pages
 	- Widgets
 	- Media
 	- Galleries
 # plugins
-
+	- 
 # Utilities
 	- Accessibility
 	- Alignments
@@ -46,9 +44,10 @@ Text Domain: 31-w
 
 /* variable
 --------------------------------------------- */
-@import "variable/colors";
-@import "variable/dimension";
 @import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
+
 
 /*--------------------------------------------------------------
 # Generic

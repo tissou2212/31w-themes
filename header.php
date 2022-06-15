@@ -16,12 +16,17 @@
 	<?php wp_head(); ?> 								<!--va attribuer le title ... -->
 </head>
 <body>
-	<section class="site">
-		<header class="site__header">					<!--la classe site__header : l'entête qui s'affiche -->
-			<section class="site__branding">			<!--la classe site__branding :  le titre du site, le logo, l'annonce du site... -->
-			Ici la section branding 
-			</section>				
-				<nav class="site__navigation">
-					Menu
-				</nav>			
-		</header>
+    <section class="site">
+        <header class="site__header">
+            <section class="site__branding">
+                <h1>
+                    <a href="<?= esc_url( home_url( '/' ) ) ?>"><?= bloginfo( 'name' ); ?></a>
+                </h1>
+                <h2>
+                <?= bloginfo( 'description' ); ?>
+                </h2>
+            </section>
+            <nav class="site__navigation">
+            Menu
+            </nav>
+        </header>

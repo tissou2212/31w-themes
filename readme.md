@@ -1,8 +1,9 @@
 # Exercice 1
 ## Sana Bakhrouf e2195749
+## https://github.com/tissou2212/
 
-### Permier theme et plugin wordpresse
-### contient 3 commits
+
+### Permier theme wordpresse
 
 > le theme contient 5 fichiers 
 - index.php

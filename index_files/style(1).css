@@ -1,10 +1,9 @@
 @charset "UTF-8";
-/*!
-Theme Name: 31W-exercice-1
-Theme URI: http://underscores.me/
-Author: Sana Bakhrouf e2195749
-Author URI: https://github.com/tissou2212
-Description: Thème de base pour le cours de 31W Exercice 1
+/*! 
+Theme Name: 31W-prof
+Author: Eddy Martin
+Author URI: http://github.com/tissou2212
+Description: Thème de base pour l'exercice 1 du cours 31w
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.4
@@ -15,11 +14,6 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Variable
-	- couleur
-	- police
-	- dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -29,22 +23,25 @@ Text Domain: 31-w
 	- Links
 	- Forms
 ## Layouts
-
-# Composant
+# Composents
 	- Navigation
 	- Posts and pages
 	- Widgets
 	- Media
 	- Galleries
 # plugins
-
+	- 
 # Utilities
 	- Accessibility
 	- Alignments
 
 --------------------------------------------------------------*/
-/* variable
---------------------------------------------- */
+/**
+* Police de caractères
+*/
+/* couleur titre */
+/* couleur lien */
+/* couleur bouton */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -379,22 +376,63 @@ html {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #fefefe;
 }
 
 /**
-*   styles pour h1, h2, h3, h4, h5 h6 et p
+*  styles pour h1,h2,h3,h4,h5mh6 et p
 */
 h1, h2 {
-  color: #666666;
+  color: #ec8989;
 }
 
-h2, h3, h4, h5, h6, p {
-  color: #1a1a1a;
+h2, h3, h4, h5, h6 {
+  color: #be1e1e;
 }
 
+p {
+  color: #3c3c3c;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6, p {
+  font-family: "Roboto Slab", serif;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* font-size */
 h1 {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+}
+
+h6 {
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 hr {
@@ -455,15 +493,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #5276e4;
 }
 
 a:visited {
-  color: #800080;
+  color: #182458;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1d62a3;
 }
 
 a:focus {
@@ -476,6 +514,7 @@ a:hover, a:active {
 
 /* Forms
 --------------------------------------------- */
+.bouton,
 button,
 input[type="button"],
 input[type="reset"],
@@ -487,8 +526,10 @@ input[type="submit"] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
+  text-decoration: none;
 }
 
+.bouton:hover,
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -496,7 +537,9 @@ input[type="submit"]:hover {
   border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+.bouton:active, .bouton:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
